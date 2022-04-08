@@ -1,0 +1,38 @@
+.socials {
+  margin-top: 136px;
+  @include ad("margin-top", 136, 90, 54);
+  @include ad("padding-bottom", 85, 32, 24);
+}
+.container {
+}
+.socials__links {
+}
+.socials-links {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+}
+.socials-link {
+  background: var(--color-btn-bg-light);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  @include ad("height", 96, 64, 64);
+  transition: background 0.1s ease-out;
+  &:hover {
+    background: #e9eaea;
+    transition: background 0.1s ease-out;
+  }
+}
+.socials-link-icon {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .socials-links {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

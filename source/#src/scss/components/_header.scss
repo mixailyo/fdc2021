@@ -1,0 +1,283 @@
+.header {
+  @include ad("padding-top", 56, 3, 0);
+  .container {
+    position: relative;
+  }
+  &_final {
+    @include ad("padding-top", 100, 80, 58);
+    .header__right-wrapper {
+      top: -65px;
+    }
+  }
+}
+.header__main-wrapper {
+}
+.header__left-wrapper {
+}
+.header__conf-logo {
+  position: relative;
+  z-index: 6;
+}
+
+.header__conf-logo-img {
+  max-height: 98%;
+}
+.header__bank-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 64px;
+  @include ad("width", 64, 32, 32);
+  transform: translateX(-50%);
+}
+.header__text {
+  margin-top: 85px;
+  @include ad("margin-top", 80, 10, 0);
+}
+.header__title {
+  span {
+    line-height: 1;
+  }
+}
+.header__date {
+  width: 145px;
+  @include ad("width", 145, 61, 53);
+  height: 94px;
+  @include ad("height", 94, 46, 45);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 21px;
+  @include ad("padding-left", 21, 0, 10);
+  padding-right: 35px;
+  @include ad("padding-right", 35, 18, 13);
+  background: var(--color-primary);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  margin-right: 25px;
+  @include ad("margin-right", 25, 15, 13);
+  span {
+    &:nth-child(1) {
+      font-size: 44px;
+      @include ad("font-size", 44, 24, 24);
+      line-height: 1;
+    }
+    &:nth-child(2) {
+      text-overflow: ellipsis;
+      font-size: 20px;
+      @include ad("font-size", 20, 12, 12);
+      line-height: 1;
+      color: var(--color-text-descr);
+    }
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+}
+.header__squares {
+  display: flex;
+  align-items: center;
+  @include ad("width", 242, 114, 114);
+  @include ad("margin-bottom", -54, -24, -24);
+  @include ad("margin-top", -54, -24, -24);
+  @include ad("margin-left", 20, 10, 5);
+}
+.header__squares-pic {
+}
+.header__title-row {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.header__title-span {
+}
+
+.header__spiral {
+  @include ad("width", 282, 118, 118);
+}
+.header__subtitle {
+  max-width: 430px;
+  @include ad("max-width", 600, 370, 350);
+  font-size: 20px;
+  @include ad("font-size", 20, 16, 16);
+  line-height: 1.4;
+  color: var(--color-text-descr);
+  margin-top: 40px;
+  @include ad("margin-top", 40, 5, 20);
+  margin-bottom: 56px;
+  @include ad("margin-bottom", 56, 10, 32);
+}
+.header__btn-registration {
+  @include ad("height", 94, 46, 45);
+}
+
+.header__right-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-image: url("../img/header-animation-bg.svg");
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
+  // background-position: center center;
+  position: absolute;
+  // padding-bottom: 30px;
+  right: 0;
+  @include ad("right", 45, 15, 24);
+  top: -145px;
+  @include ad("top", -120, 10, -95);
+  width: 690px;
+  @include ad("width", 660, 250, 228);
+  // img {
+  //   min-width: 80%;
+  //   max-width: 90%;
+  //   min-height: auto;
+  //   margin-top: -90px;
+  // }
+}
+
+.header__animation {
+  min-width: 100%;
+  min-height: 100%;
+}
+.header__animation-video {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+}
+.header__animation-coin {
+  position: absolute;
+  top: 95px;
+  @include ad("top", 95, 45, 60);
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  @include ad("width", 280, 160, 150);
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .header__date {
+    span {
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        display: block;
+        font-size: 12px;
+        color: var(--color-text-descr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    @include ad("padding-top", 56, 56, 58);
+    &_final {
+      @include ad("padding-top", 100, 56, 75);
+    }
+  }
+  .header__date {
+    @include ad("padding-left", 21, 12, 10);
+  }
+  .header__text {
+    @include ad("margin-top", 80, 49, 285);
+  }
+  .header__bank-logo {
+    display: none;
+  }
+  .header_final .header__bank-logo {
+    display: block;
+  }
+  .header__right-wrapper {
+    // background-image: url("../img/header-animation-bg-tab.svg");
+    // background-repeat: no-repeat;
+    // background-size: 83% 81%;
+    // background-position: 36px center;
+    // position: absolute;
+    // transform: scale(1.2);
+    height: auto;
+    right: 0;
+    @include ad("right", 0, -85, -95);
+    top: -145px;
+    @include ad("top", -145, -64, -95);
+    width: 698px;
+    @include ad("width", 666, 420, 228);
+    img {
+      margin: 0;
+    }
+  }
+  .header__right-wrapper {
+    // background-size: 94% 100%;
+    // background-position: 36px center;
+    // padding-bottom: 90px;
+  }
+  .header__btn-registration {
+    @include ad("height", 94, 72, 72);
+  }
+  .header__subtitle {
+    @include ad("margin-top", 40, 25, 20);
+    @include ad("margin-bottom", 56, 48, 32);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__title {
+    letter-spacing: -0.03em;
+    span {
+      letter-spacing: -0.03em;
+    }
+  }
+  .header__text {
+    margin-top: 595px;
+    @include ad("margin-top", 500, 500, 215);
+  }
+  .header_final {
+    .header__bank-logo {
+      left: auto;
+      right: 0;
+      transform: translateX(-74%);
+    }
+    .header__text {
+      @include ad("margin-top", 500, 500, 185);
+    }
+  }
+  .header__right-wrapper {
+    top: 0;
+    @include ad("top", 95, -70, -30);
+    right: auto;
+    left: 50%;
+    width: 87%;
+    height: 84vw;
+    transform: translateX(-50%);
+    z-index: 5;
+    // background-position: center center;
+    // background-size: 100% 100%;
+    // background-image: url("../img/header-animation-bg-mob.svg");
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+  .header__animation-coin {
+    @include ad("top", 95, 45, 30);
+    @include ad("width", 300, 175, 80);
+  }
+  img.header__animation {
+    max-height: 130%;
+    min-width: auto;
+    min-height: auto;
+    margin-top: -80px;
+  }
+  .btn--primary {
+    width: 100%;
+  }
+  .header__btn-registration {
+    // position: sticky;
+    // bottom: 50px;
+  }
+}

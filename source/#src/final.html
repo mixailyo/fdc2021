@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="Конференция Fintech Design Conf 2021 пройдет 30 сентября в онлайне. Дизайн-команды современных банков покажут, что интересного происходит в отрасли и расскажут, куда движется индустрия."
+      name="description"
+    />
+    <meta content="дизайн, конференция, финтех, design, conference, fintech, UX, product design, продуктовый дизайн" name="keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta property="og:title" content=" Fintech Design Conf 2021" />
+    <meta
+      property="og:description"
+      content="Конференция Fintech Design Conf 2021 пройдет 30 сентября в онлайне. Дизайн-команды современных банков покажут, что интересного происходит в отрасли и расскажут, куда движется индустрия."
+    />
+    <meta property="og:image" content="static/images/OG.png" />
+    <meta name="cmsmagazine" content="5030b50dd17858824f3ab635603e59bc" />
+    <link rel="shortcut icon" href="static/images/apple-touch-icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="static/images/favicon.ico" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>FDC 2021</title>
+    <!-- VK counter -->
+    <script type="text/javascript">
+      !(function () {
+        var t = document.createElement("script");
+        (t.type = "text/javascript"),
+          (t.async = !0),
+          (t.src = "https://vk.com/js/api/openapi.js?169"),
+          (t.onload = function () {
+            VK.Retargeting.Init("VK-RTRG-537027-gdMYj"), VK.Retargeting.Hit();
+          }),
+          document.head.appendChild(t);
+      })();
+    </script>
+    <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-537027-gdMYj" style="position: fixed; left: -999px" alt="" /></noscript>
+    <!-- /VK counter -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "137942571823832");
+      fbq("track", "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=137942571823832&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(83904799, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img src="https://mc.yandex.ru/watch/83904799" style="position: absolute; left: -9999px" alt="" /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <div class="page">
+      <div class="scroll-wrapper">
+        <div class="scroll-content">
+          <div class="scroll-content-container">
+            @@include('html/_header_final.html') @@include('html/_timeline.html') @@include('html/_people.html')
+            <section class="final__form" id="final-form">
+              <div class="container">@@include('html/_reg-form.html')</div>
+            </section>
+            @@include('html/_sponsor.html') @@include('html/_socials.html')
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

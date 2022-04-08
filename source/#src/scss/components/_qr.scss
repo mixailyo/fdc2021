@@ -1,0 +1,68 @@
+.qr-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  z-index: -100;
+  opacity: 0;
+  transition: opacity 0.1s 0.1s linear, z-index 0s;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 230, 0, 0) -41.63%,
+    #fee600 47.43%,
+    rgba(254, 230, 0, 0) 123.52%
+  );
+  &.active {
+    opacity: 1;
+    z-index: 9999999999999999;
+    transition: opacity 0.1s linear;
+    .qr {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+      transition-delay: 0.1s;
+    }
+    .qr-close {
+      opacity: 1;
+      transition: opacity 0.1s ease-out;
+      transition-delay: 0.1s;
+    }
+  }
+}
+.qr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -54%);
+  width: 500px;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.qr-close {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background-image: url(../img/btn-close.svg);
+  cursor: pointer;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.qr__pic-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+  border-radius: 36px;
+}

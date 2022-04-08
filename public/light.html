@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="Конференция Fintech Design Conf 2021 пройдет 30 сентября в онлайне. Дизайн-команды современных банков покажут, что интересного происходит в отрасли и расскажут, куда движется индустрия."
+      name="description"
+    />
+    <meta
+      content="дизайн, конференция, финтех, design, conference, fintech, UX, product design, продуктовый дизайн"
+      name="keywords"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta property="og:title" content=" Fintech Design Conf 2021" />
+    <meta
+      property="og:description"
+      content="Конференция Fintech Design Conf 2021 пройдет 30 сентября в онлайне. Дизайн-команды современных банков покажут, что интересного происходит в отрасли и расскажут, куда движется индустрия."
+    />
+    <meta property="og:image" content="static/images/OG.png" />
+    <meta name="cmsmagazine" content="5030b50dd17858824f3ab635603e59bc" />
+    <link
+      rel="shortcut icon"
+      href="static/images/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="static/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>FDC 2021</title>
+    <!-- VK counter -->
+    <script type="text/javascript">
+      !(function () {
+        var t = document.createElement("script");
+        (t.type = "text/javascript"),
+          (t.async = !0),
+          (t.src = "https://vk.com/js/api/openapi.js?169"),
+          (t.onload = function () {
+            VK.Retargeting.Init("VK-RTRG-537027-gdMYj"), VK.Retargeting.Hit();
+          }),
+          document.head.appendChild(t);
+      })();
+    </script>
+    <noscript
+      ><img
+        src="https://vk.com/rtrg?p=VK-RTRG-537027-gdMYj"
+        style="position: fixed; left: -999px"
+        alt=""
+    /></noscript>
+    <!-- /VK counter -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "137942571823832");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=137942571823832&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(83904799, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/83904799"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <section class="ticker swiper-container">
+  <div class="ticker__cards swiper-wrapper">
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">Райффайзенбанк</p>
+      <div class="ticker__card-pic">
+        <img src="img/ticker-card-1.svg" alt="" />
+      </div>
+    </div>
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">Angry</p>
+      <div class="ticker__card-pic">
+        <img
+          class="ticker__card-pic-img"
+          src="img/ticker-card-2.png"
+          alt="Хайс"
+        />
+      </div>
+    </div>
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">МТС Банк</p>
+      <div class="ticker__card-pic">
+        <img
+          class="ticker__card-pic-img"
+          src="img/ticker-card-3.png"
+          alt="МТС Банк"
+        />
+      </div>
+    </div>
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">Ак Барс</p>
+      <div class="ticker__card-pic">
+        <img
+          class="ticker__card-pic-img"
+          src="img/ticker-card-4.png"
+          alt="Ак Барс"
+        />
+      </div>
+    </div>
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">ВТБ</p>
+      <div class="ticker__card-pic">
+        <img
+          class="ticker__card-pic-img"
+          src="img/ticker-card-5.png"
+          alt="ВТБ"
+        />
+      </div>
+    </div>
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">Klarna</p>
+      <div class="ticker__card-pic">
+        <img
+          class="ticker__card-pic-img"
+          src="img/ticker-card-6.png"
+          alt="Klarna"
+        />
+      </div>
+    </div>
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">Ony</p>
+      <div class="ticker__card-pic">
+        <img
+          class="ticker__card-pic-img"
+          src="img/ticker-card-7.png"
+          alt="Точка"
+        />
+      </div>
+    </div>
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">Тинькофф</p>
+      <div class="ticker__card-pic">
+        <img
+          class="ticker__card-pic-img"
+          src="img/ticker-card-8.png"
+          alt="Тинькофф"
+        />
+      </div>
+    </div>
+    <div class="ticker__card swiper-slide">
+      <p class="ticker__card-text">Росбанк</p>
+      <div class="ticker__card-pic">
+        <img
+          class="ticker__card-pic-img"
+          src="img/ticker-card-9.png"
+          alt="Росбанк"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+ <header class="header">
+  <div class="container">
+    <div class="header__main-wrapper">
+      <div class="header__left-wrapper">
+        <div class="header__conf-logo conf-logo">
+          <img
+            src="img/header-conf-logo.svg"
+            class="header__conf-logo-img"
+            alt=""
+          />
+        </div>
+        <div class="header__bank-logo">
+          <img
+            src="img/header-bank-logo.svg"
+            class="header__conf-bank-img"
+            alt=""
+          />
+        </div>
+        <div class="header__text">
+          <h1 class="header__title title-h1">
+            <div class="header__date">
+              <span>30</span>
+              <span>сентября</span>
+              <span>сен.</span>
+            </div>
+            <span class="safari-correct safari-correct_2">Конференция</span>
+            <span class="safari-correct safari-correct_2">про дизайн</span>
+            <div class="header__squares">
+              <img
+                class="header__squares-pic"
+                src="img/header-squares.png"
+                alt=""
+              />
+            </div>
+            <br />
+            <span class="safari-correct safari-correct_1">в</span>
+            <div class="header__spiral">
+              <img src="img/header-spiral.png" alt="" />
+            </div>
+            <span class="safari-correct safari-correct_1">финтехе</span>
+          </h1>
+          <p class="header__subtitle">
+            30 сентября дизайн-команды современных банков расскажут в
+            онлайн-формате, куда движется индустрия
+          </p>
+          <button class="header__btn-registration btn btn--primary">
+            Зарегистрироваться
+          </button>
+        </div>
+      </div>
+      <div class="header__right-wrapper">
+        <!-- <img src="img/header-animation.png" alt="" class="header__animation" /> -->
+        <div class="header__animation-coin">
+          <img src="video/coin/bluecoin_0000.png" alt="" />
+        </div>
+        <video
+          class="header__animation-video"
+          preload="auto"
+          muted="muted"
+          playsinline=""
+        >
+          <source src="video/main_banner.mp4" type="video/mp4;" />
+        </video>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section class="socials">
+  <div class="container">
+    <div class="socials__links socials-links">
+      <a
+        href="https://www.facebook.com/raifdesign/"
+        class="socials-link"
+        target="_blank"
+      >
+        <img src="img/social-1.svg" class="socials-link-icon" alt="" />
+      </a>
+      <a href="https://vk.com/raifdesign" class="socials-link" target="_blank">
+        <img src="img/social-2.svg" class="socials-link-icon" alt="" />
+      </a>
+      <a
+        href="https://www.instagram.com/raif.design/"
+        class="socials-link"
+        target="_blank"
+      >
+        <img src="img/social-3.svg" class="socials-link-icon" alt="" />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCy9eLoBmCkc-g06N-rF8hxg/?guided_help_flow=5"
+        class="socials-link"
+        target="_blank"
+      >
+        <img src="img/social-4.svg" class="socials-link-icon" alt="" />
+      </a>
+      <a href="https://t.me/raifdesign" class="socials-link" target="_blank">
+        <img src="img/social-7.svg" class="socials-link-icon" alt="" />
+      </a>
+      <a
+        href="https://www.behance.net/raiffeisendesign"
+        class="socials-link"
+        target="_blank"
+      >
+        <img src="img/social-5.svg" class="socials-link-icon" alt="" />
+      </a>
+      <a href="https://dribbble.com/raif" class="socials-link" target="_blank">
+        <img src="img/social-6.svg" class="socials-link-icon" alt="" />
+      </a>
+    </div>
+  </div>
+</section>
+ <div class="popup-overlay">
+  <div class="popup">
+    <div class="container">
+      <button class="popup__btn-close">
+        <img src="img/btn-close.svg" alt="" />
+      </button>
+      <form action="send.php" method="post" class="popup__form reg-form">
+        <h2 class="reg-form__title title-h1">
+          <span>Заполни форму</span>
+          <div class="reg-form__title-row">
+            <span class="safari-correct">и получи</span>
+            <div class="reg-form__flower">
+              <img src="img/reg-form-flower.png" alt="" />
+            </div>
+            <span class="safari-correct safari-correct_3">возможность</span>
+          </div>
+          <div class="reg-form__title-row">
+            <div class="reg-form__circle">
+              <img src="img/reg-form-circle.png" alt="" />
+            </div>
+            <span class="safari-correct safari-correct_3">попасть на воркшопы</span>
+          </div>
+        </h2>
+        <div class="reg-form__cards">
+          <div class="reg-form__card reg-form__card_wave_2">Редактура</div>
+          <div class="reg-form__card reg-form__card_wave_3">UX-исследования</div>
+          <div class="reg-form__card reg-form__card_wave_4">Визуальный сторителлинг</div>
+          <div class="reg-form__card reg-form__card_wave_3">Маски в Инстаграме</div>
+        </div>
+        <div class="reg-form__inputs">
+          <div class="reg-form__input-wrapper">
+            <input type="text" id="reg-form__name" class="required" placeholder="Ваше имя*" required />
+            <label for="reg-form__name">Ваше имя*</label>
+          </div>
+          <div class="reg-form__input-wrapper">
+            <input type="email" id="reg-form__email" class="required" placeholder="Электронная почта*" required />
+            <label for="reg-form__email">Электронная почта*</label>
+          </div>
+          <div class="reg-form__input-wrapper">
+            <input type="text" id="reg-form__where-work" placeholder="Где вы работаете" />
+            <label for="reg-form__where-work">Где вы работаете</label>
+          </div>
+          <div class="reg-form__input-wrapper">
+            <select id="reg-form__what-do" name="reg-form__what-do">
+              <option class="placeholder" selected disabled hidden>Чем вы занимаетесь?</option>
+              <option value="value1">Дизайнер</option>
+              <option value="value2">UX-исследователь</option>
+              <option value="value3">Редактор</option>
+              <option value="value4">Менеджер продукта</option>
+              <option value="value5">Разработчик</option>
+              <option value="value6">Маркетолог</option>
+              <option value="value7">Аналитик</option>
+              <option value="value8">Тестировщик</option>
+              <option value="value9">Другое</option>
+            </select>
+            <label for="reg-form__what-do">Чем вы занимаетесь?</label>
+          </div>
+        </div>
+        <button class="reg-form__submit btn btn--primary">Зарегистрироваться</button>
+        <!-- <a href="thanks.html" class="reg-form__submit btn btn--primary">
+          Зарегистрироваться
+        </a> -->
+      </form>
+    </div>
+  </div>
+</div>
+
+    <main class="main"></main>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

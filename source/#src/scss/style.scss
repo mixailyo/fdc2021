@@ -1,0 +1,23 @@
+// Обнуляем стили
+@import "null.scss";
+// Подключаем шрифты
+@import "fonts.scss";
+// Подключаем миксины
+@import "mixins.scss";
+// Подключаем гамбургер
+@import "hamburger.scss";
+// Подключаем переменные
+@import "vars.scss";
+
+// Подключаем компоненты страницы
+@import "components/_ticker.scss";
+@import "components/_header.scss";
+@import "components/_socials.scss";
+@import "components/_popup.scss";
+@import "components/_thanks.scss";
+@import "components/_qr.scss";
+@import "components/_timeline.scss";
+@import "components/_people.scss";
+@import "components/_sponsor.scss";
+@import "components/_custom-scroll.scss";
+@import "components/_broadcast.scss";

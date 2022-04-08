@@ -1,0 +1,93 @@
+.ticker {
+  padding-top: 15px;
+  // overflow-x: scroll;
+  z-index: 5;
+  position: relative;
+}
+.ticker::-webkit-scrollbar {
+  width: 0;
+}
+.ticker__cards {
+  display: flex;
+  // padding-left: 100%;
+  width: fit-content;
+  &:hover {
+    animation-play-state: paused;
+  }
+  &.first-animation {
+    animation-fill-mode: forwards;
+    animation-name: scrolla;
+    animation-timing-function: linear;
+  }
+  &.second-animation {
+    animation-name: scrollb;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes scrolla {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes scrollb {
+  from {
+    transform: translate(0, 0);
+    padding-left: 100%;
+  }
+  to {
+    padding-left: 0;
+  }
+}
+
+body .ticker__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f5f5;
+  // border-top-left-radius: 50px;
+  // border-top-right-radius: 200px;
+  // border-bottom-right-radius: 200px;
+  // border-bottom-left-radius: 50px;
+  // @include ad("border-top-left-radius", 50, 80, 80);
+  // @include ad("border-top-right-radius", 200, 80, 80);
+  // @include ad("border-bottom-right-radius", 200, 80, 80);
+  // @include ad("border-bottom-left-radius", 50, 80, 80);
+  border-radius: 200px;
+  @include adb("border-radius", 200, 80);
+  @include ad("width", 417, 266, 266);
+  @include ad("height", 88, 71, 71);
+  @include ad("padding-left", 40, 20, 20);
+  @include ad("padding-right", 24, 8, 8);
+  @include ad("font-size", 24, 20, 20);
+  &:not(:last-child) {
+    @include ad("margin-right", 20, 16, 16);
+  }
+}
+.ticker__card-text {
+}
+.ticker__card-pic {
+  @include ad("width", 56, 55, 55);
+  @include ad("height", 56, 55, 55);
+}
+.ticker__card-pic-img {
+}
+
+@media screen and (max-width: 768px) {
+  .ticker__cards {
+    // animation: scroll 10s infinite linear;
+  }
+  .ticker__card {
+    width: fit-content;
+  }
+  .ticker__card-pic {
+    margin-left: 20px;
+  }
+  .ticker__card-text {
+    white-space: nowrap;
+  }
+}

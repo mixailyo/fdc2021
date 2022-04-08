@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png" />
+    <link rel="manifest" href="static/site.webmanifest" />
+    <link rel="mask-icon" href="static/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="static/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="static/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>FDC 2021</title>
+  </head>
+  <body>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .btns {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      a.ligth {
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        width: 416px;
+        height: 163px;
+        background: linear-gradient(153.08deg, #ffcacc 16.84%, #ffffff 120.07%);
+        border-radius: 50px 300px 300px 50px;
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+      a.ligth:hover {
+        background: linear-gradient(153.08deg, var(--color-primary) 16.84%, #ffffff 120.07%);
+      }
+      a.migth {
+        border-radius: 300px 50px 50px 300px;
+        background: linear-gradient(153.08deg, var(--color-primary) 16.84%, #ffffff 120.07%);
+      }
+      a.migth:hover {
+        background: linear-gradient(153.08deg, #ffcacc 16.84%, #ffffff 120.07%);
+      }
+    </style>
+    <nav class="btns">
+      <a class="ligth" href="light.html">Упрощенная версия</a>
+      <a class="ligth migth" href="thanks.html">Спасибо</a>
+      <a class="ligth" href="final.html">Финал</a>
+      <a class="ligth migth" href="broadcast.html">Трансляция</a>
+    </nav>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

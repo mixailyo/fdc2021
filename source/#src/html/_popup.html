@@ -1,0 +1,66 @@
+<div class="popup-overlay">
+  <div class="popup">
+    <div class="container">
+      <button class="popup__btn-close">
+        <img src="img/btn-close.svg" alt="" />
+      </button>
+      <form action="send.php" method="post" class="popup__form reg-form">
+        <h2 class="reg-form__title title-h1">
+          <span>Заполни форму</span>
+          <div class="reg-form__title-row">
+            <span class="safari-correct">и получи</span>
+            <div class="reg-form__flower">
+              <img src="img/reg-form-flower.png" alt="" />
+            </div>
+            <span class="safari-correct safari-correct_3">возможность</span>
+          </div>
+          <div class="reg-form__title-row">
+            <div class="reg-form__circle">
+              <img src="img/reg-form-circle.png" alt="" />
+            </div>
+            <span class="safari-correct safari-correct_3">попасть на воркшопы</span>
+          </div>
+        </h2>
+        <div class="reg-form__cards">
+          <div class="reg-form__card reg-form__card_wave_2">Редактура</div>
+          <div class="reg-form__card reg-form__card_wave_3">UX-исследования</div>
+          <div class="reg-form__card reg-form__card_wave_4">Визуальный сторителлинг</div>
+          <div class="reg-form__card reg-form__card_wave_3">Маски в Инстаграме</div>
+        </div>
+        <div class="reg-form__inputs">
+          <div class="reg-form__input-wrapper">
+            <input type="text" id="reg-form__name" class="required" placeholder="Ваше имя*" required />
+            <label for="reg-form__name">Ваше имя*</label>
+          </div>
+          <div class="reg-form__input-wrapper">
+            <input type="email" id="reg-form__email" class="required" placeholder="Электронная почта*" required />
+            <label for="reg-form__email">Электронная почта*</label>
+          </div>
+          <div class="reg-form__input-wrapper">
+            <input type="text" id="reg-form__where-work" placeholder="Где вы работаете" />
+            <label for="reg-form__where-work">Где вы работаете</label>
+          </div>
+          <div class="reg-form__input-wrapper">
+            <select id="reg-form__what-do" name="reg-form__what-do">
+              <option class="placeholder" selected disabled hidden>Чем вы занимаетесь?</option>
+              <option value="value1">Дизайнер</option>
+              <option value="value2">UX-исследователь</option>
+              <option value="value3">Редактор</option>
+              <option value="value4">Менеджер продукта</option>
+              <option value="value5">Разработчик</option>
+              <option value="value6">Маркетолог</option>
+              <option value="value7">Аналитик</option>
+              <option value="value8">Тестировщик</option>
+              <option value="value9">Другое</option>
+            </select>
+            <label for="reg-form__what-do">Чем вы занимаетесь?</label>
+          </div>
+        </div>
+        <button class="reg-form__submit btn btn--primary">Зарегистрироваться</button>
+        <!-- <a href="thanks.html" class="reg-form__submit btn btn--primary">
+          Зарегистрироваться
+        </a> -->
+      </form>
+    </div>
+  </div>
+</div>
